@@ -4,9 +4,9 @@ This repository contains web data-collection tasks in Python 3.5 that I chose as
 
 Completed projects till now  :
 
-**1. Desktop notifier for daily news updates.**
+**1. Desktop notifier for daily news updates. (news.py)**
 
-**2. Desktop notifier for live cricket scores.**
+**2. Desktop notifier for live cricket scores. (Cricket_score.py) **
 
-**3. Scraped Linkedin profile to fetch useful information.**
+**3. Scraped Linkedin profile to fetch useful information. (linkedin.py)**
 
