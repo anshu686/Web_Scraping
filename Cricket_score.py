@@ -1,9 +1,7 @@
-import feedparser
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import notify2
 import os, time, random, re
-
 
 def Parsefeed():
 
@@ -20,16 +18,11 @@ def Parsefeed():
         j = soup.get_text('class:', 'large-13 medium-13 columns innings-information')
 
         regex = r".*:"
-        # matches = []
+        
         matches = re.findall(regex, j)[0]
         regex2 = r".*\)"
         title = re.findall(r"\|.*\|", matches)[0]
         score = re.findall(regex2, matches)[0]
-
-        # print(title)
-        # print(score)
-
-
 
         n = notify2.Notification(title,
                                  score,
